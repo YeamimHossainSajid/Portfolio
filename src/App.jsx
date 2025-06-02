@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -10,9 +9,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-gradient-to-r from-white via-gray-600 to-black min-h-screen text-gray-900 font-sans
-
-">
+    <div className="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] min-h-screen text-white font-sans">
       <Navbar />
       <Hero />
       <About />
@@ -25,3 +22,4 @@ function App() {
 }
 
 export default App;
+

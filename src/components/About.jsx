@@ -1,14 +1,55 @@
-function About() {
+import React from 'react';
+import sajid from "../assets/sajid.jpg";
+
+const About = () => {
   return (
-    <section
-      id="about"
-      className="container mx-auto px-6 py-20 max-w-4xl text-center"
-    >
-      <h2 className="text-4xl font-bold mb-6">About Me</h2>
-      <p className="text-lg text-gray-200 leading-relaxed">
-       I am a passionate software developer focused on mastering Flutter and Java Spring Boot. I enjoy solving complex problems, writing clean code, and building practical applications. Always eager to learn and grow, I am driven to deliver high-quality work and prepare for top tech opportunities
-      </p>
+    
+    <section>
+
+
+
+
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-10">
+        
+        {/* Text Section */}
+        <div className="flex-1">
+          <h2 className="text-3xl md:text-4xl font-semibold text-white mb-6">/ about me</h2>
+          <p className="text-lg leading-relaxed text-gray-300 mb-4">
+            I am currently a <span className="font-semibold text-white">Software Development Engineer at </span>
+            <span className="text-teal-400 font-semibold">Amazon</span>, working in the AWS sector under team Route 53.
+            At the same time, I am undertaking a part-time <span className="font-semibold">Master’s of Science in Software Engineering</span> at 
+            <span className="text-teal-400 font-semibold"> University of Oxford</span>.
+          </p>
+          <p className="text-lg leading-relaxed text-gray-300 mb-4">
+            Here are some technologies I have been working with:
+          </p>
+          
+          <div className="grid grid-cols-2 gap-2 text-gray-300 text-sm md:text-base mb-6">
+            <p className="flex items-center">▸ Typescript</p>
+            <p className="flex items-center">▸ Python</p>
+            <p className="flex items-center">▸ React.js</p>
+            <p className="flex items-center">▸ Java</p>
+            <p className="flex items-center">▸ Javascript ES6+</p>
+            <p className="flex items-center">▸ C#</p>
+          </div>
+
+          <p className="text-lg leading-relaxed text-gray-300">
+            Outside of work, I’m interested in following the developments of science.
+            I also play a lot of video games. And make TikToks.
+          </p>
+        </div>
+
+        {/* Image Section */}
+        <div className="w-full md:w-1/3">
+          <img 
+            src={sajid} 
+            alt="Profile" 
+            className="rounded-xl object-cover w-full shadow-lg"
+          />
+        </div>
+      </div>
     </section>
   );
-}
+};
+
 export default About;

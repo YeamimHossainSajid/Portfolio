@@ -2,15 +2,17 @@ import { useState } from "react";
 
 function Skills() {
   const frontendSkills = [
-    { name: "React", img: "https://cdn.worldvectorlogo.com/logos/react-2.svg" },
-    { name: "JavaScript", img: "https://cdn.worldvectorlogo.com/logos/javascript.svg" },
+    { name: "JavaScript", img: "https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" },
+    { name: "React", img: "https://img.icons8.com/clouds/512/react.png" },
+    { name: "Next Js", img: "https://cdn.freelogovectors.net/wp-content/uploads/2023/09/next-js-logo-freelogovectors.net_.png" },
     { name: "Tailwind CSS", img: "https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" },
   ];
 
   const backendSkills = [
     { name: "Node.js", img: "https://cdn.worldvectorlogo.com/logos/nodejs-icon.svg" },
     { name: "Python", img: "https://cdn.worldvectorlogo.com/logos/python-5.svg" },
-    { name: "Express.js", img: "https://cdn.worldvectorlogo.com/logos/express-109.svg" },
+    { name: "Spring", img: "https://www.vincenzoracca.com/images/spring.png" },
+    { name: "Kafka", img: "https://www.svgrepo.com/show/353950/kafka.svg" },
   ];
 
   const uiuxSkills = [
@@ -49,9 +51,9 @@ function Skills() {
         ))}
       </div>
 
-      {/* Skills grid centered */}
+      {/* Skills grid centered and responsive */}
       <div className="flex justify-center">
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 justify-items-center">
           {getSkillsByTab().map((skill) => (
             <div
               key={skill.name}

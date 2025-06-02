@@ -1,56 +1,59 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import sajid from "../assets/sajid.jpg"; // Adjust the path according to your folder structure
+import React from 'react';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { Typewriter } from 'react-simple-typewriter';
 
-function Hero() {
+const Hero = () => {
   return (
-    <>
-      <Helmet>
-        <title>Yeamim Hossain Sajid - Software Developer Portfolio</title>
-        <meta
-          name="description"
-          content="Portfolio of Yeamim Hossain Sajid, a passionate software developer specializing in Flutter, Java Spring Boot, and web development."
-        />
-        <meta
-          name="keywords"
-          content="Yeamim Hossain Sajid, Software Developer, Flutter Developer, Java Spring Boot, Web Developer"
-        />
-        <meta name="author" content="Yeamim Hossain Sajid" />
-      </Helmet>
+   <section className="min-h-screen flex items-center justify-center text-white px-6">
+      <div className="max-w-3xl text-center flex flex-col items-center">
+        {/* Greeting */}
+        <p className="text-teal-400 text-lg mb-2 animate-pulse">Hey there 👋</p>
 
-      <section
-        id="home"
-        className="min-h-screen flex flex-col md:flex-row justify-center items-center px-6"
-        aria-label="Introduction and hero section"
-      >
-        {/* Left: Text */}
-        <div className="text-center md:text-left md:max-w-lg md:mr-10">
-          <h1 className="text-5xl font-extrabold mb-4 drop-shadow-lg">
-            Hey, I’m Yeamim Hossain Sajid
-          </h1>
-          <p className="text-xl max-w-xl mb-8 drop-shadow-md">
-            A passionate developer crafting beautiful web experiences.
-          </p>
-          <a
-            href="#contact"
-            className="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-300 transition"
-            aria-label="Navigate to contact section"
-          >
-            Let’s Work Together
+        {/* Name with Gradient */}
+        <h1 className="text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-cyan-400 to-teal-300 text-transparent bg-clip-text drop-shadow-lg mb-4">
+          I'm Yeamim Hossain Sajid
+        </h1>
+
+        {/* Typewriter Effect */}
+        <h2 className="text-2xl md:text-4xl font-semibold text-gray-300 mb-6">
+          <span className="text-white">
+            <Typewriter
+              words={['I build full-stack apps.', 'I design UIs.', 'I solve real problems.']}
+              loop={0}
+              cursor
+              cursorStyle="_"
+              typeSpeed={70}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
+          </span>
+        </h2>
+
+        {/* Description */}
+        <p className="text-gray-400 max-w-xl mb-6 leading-relaxed">
+          I'm a passionate developer specializing in crafting clean, modern, and performant web applications. My goal is to solve real-world problems with elegant code and seamless user experiences.
+        </p>
+
+        {/* Social Links */}
+        <div className="flex items-center justify-center gap-6 mt-6 text-2xl text-gray-300">
+          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+            <FaGithub className="hover:text-white transition duration-300" />
+          </a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+            <FaLinkedin className="hover:text-white transition duration-300" />
+          </a>
+          <a href="mailto:youremail@example.com" className="hover:text-white transition duration-300">
+            <FaEnvelope />
           </a>
         </div>
 
-        {/* Right: Image */}
-        <img
-          src={sajid}
-          alt="Portrait of Yeamim Hossain Sajid"
-          className="w-60 h-60 rounded-[30px] object-cover max-w-full mt-10 md:mt-0"
-        />
-      </section>
-    </>
+        {/* Scroll Down Animation */}
+        <div className="mt-12 animate-bounce text-gray-500 text-sm">
+          ↓ Scroll to see my work
+        </div>
+      </div>
+    </section>
   );
-}
+};
 
 export default Hero;
-
-
