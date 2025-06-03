@@ -14,7 +14,7 @@ function Contact() {
           <input
             id="name"
             type="text"
-            placeholder="Your name"
+            placeholder="Yeamim Hossain Sajid"
             className="w-full px-4 py-3 rounded-md text-black"
           />
         </div>

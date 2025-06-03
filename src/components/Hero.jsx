@@ -36,13 +36,13 @@ const Hero = () => {
 
         {/* Social Links */}
         <div className="flex items-center justify-center gap-6 mt-6 text-2xl text-gray-300">
-          <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+          <a href="https://github.com/YeamimHossainSajid" target="_blank" rel="noreferrer">
             <FaGithub className="hover:text-white transition duration-300" />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/yeamim-hossain-sajid-50b100267/" target="_blank" rel="noreferrer">
             <FaLinkedin className="hover:text-white transition duration-300" />
           </a>
-          <a href="mailto:youremail@example.com" className="hover:text-white transition duration-300">
+          <a href="mailto:yeamimhossainsajid@example.com" className="hover:text-white transition duration-300">
             <FaEnvelope />
           </a>
         </div>
