@@ -25,7 +25,7 @@ function Contact() {
           <input
             id="email"
             type="email"
-            placeholder="Your email"
+            placeholder="yeamimhossainsajid@gmail.com"
             className="w-full px-4 py-3 rounded-md text-black"
           />
         </div>
