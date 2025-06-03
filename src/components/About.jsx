@@ -40,13 +40,13 @@ const About = () => {
         </div>
 
         {/* Image Section */}
-        <div className="w-full md:w-1/3">
-          <img 
-            src={sajid} 
-            alt="Profile" 
-            className="rounded-xl object-cover w-full shadow-lg"
-          />
-        </div>
+     <div className="w-full md:w-1/3 flex justify-center">
+  <img 
+    src={sajid} 
+    alt="Profile" 
+    className="rounded-xl object-cover w-[80%] max-w-xs shadow-lg"
+  />
+</div>
       </div>
     </section>
   );

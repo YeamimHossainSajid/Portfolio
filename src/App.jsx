@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Experience from "./components/Experience";
 
 function App() {
+  
   return (
     <div className="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] min-h-screen text-white font-sans">
       <Navbar />
@@ -24,3 +25,4 @@ function App() {
 
 export default App;
 
+//    <div className="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] min-h-screen text-white font-sans">
