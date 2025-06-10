@@ -12,7 +12,7 @@ import SEO from "./components/SEO";
 function App() {
   
   return (
-    <div className="bg-gradient-to-br from-[#0F172A] via-[#1E293B] to-[#0F172A] min-h-screen text-white font-sans">
+    <div className="bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] min-h-screen text-white font-sans">
       <SEO />
       <Navbar />
       <Hero />
